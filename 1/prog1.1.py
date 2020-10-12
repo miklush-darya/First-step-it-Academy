@@ -1,3 +1,4 @@
+
 mas = input().split()
 n=len(mas)
 for i in range(n):
@@ -10,4 +11,4 @@ for i in range(n-1):
         x=mas[i]^mas[j]
         s.append(x)
 print (s)
-print(max(s))
+print(max(s)) 
