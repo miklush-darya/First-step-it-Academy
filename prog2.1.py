@@ -1,13 +1,14 @@
-mas = input().split()
-n=len(mas)
+kort=(1, 2, 3, 4, 5, 6, 7, 8, 9, 0) 
+n=len(kort)
+kort=list(kort)
+mas=[]
+
 for i in range(n):
-    mas[i] = int(mas[i])
-
-x=int(input())
+    if i%2==0:
+        x=kort[i]*2
+        mas.append(x)
+    else:
+        x=kort[i]-2
+        mas.append(x)
+mas=tuple(mas)
 print (mas)
-print(x)
-
-for i in range(n-1):
-    for j in range(i+1, n):
-        if x==mas[i]+mas[j]:
-            print(i, j)
