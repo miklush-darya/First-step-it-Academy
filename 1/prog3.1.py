@@ -9,13 +9,13 @@ for i in range(n-1):
 
 # 2 способ
 
-mas=input().split()# вводим массив с 2мя повторябщимися элементами
-
-def func_elem():
-  n=len(mas1)
+def func_elem(mas):
+  n=len(mas)
   for i in range(n-1):
      for j in range(i+1, n):
-        if mas1[i]==mas1[j]:
-          print('повторяющийся элемент-', mas1[i])
+        if mas[i]==mas[j]:
+          print('повторяющийся элемент-', mas[i])
 
-func_elem()
+print('введите массив с двумя повторяющимися элементами-')
+m=input().split()
+func_elem(m)

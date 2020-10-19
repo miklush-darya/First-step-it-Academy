@@ -15,9 +15,7 @@ print(max(s))
 
 
 #2 способ
-mas = list(map(int, input().split()))
-
-def func_max():
+def func_max(mas):
   n=len(mas)
   s=[]
   for i in range(n-1):
@@ -27,4 +25,6 @@ def func_max():
   print (s)
   print(max(s))
 
-func_max()
+m = list(map(int, input().split()))
+
+func_max(m)
