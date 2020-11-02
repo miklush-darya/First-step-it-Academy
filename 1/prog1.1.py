@@ -26,5 +26,4 @@ def func_max(mas):
   print(max(s))
 
 m = list(map(int, input().split()))
-
 func_max(m)
